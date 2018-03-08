@@ -20,7 +20,7 @@ class HtmlSelect extends Component {
 
   render() {
     return (
-        <select className="form-control" value={this.state.value} onChange={this.onChange}>
+        <select className="form-control" onChange={this.onChange}>
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>

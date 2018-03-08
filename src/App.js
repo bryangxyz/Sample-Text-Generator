@@ -53,13 +53,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Sample Text Generator</h1>
+        <h1 className="text-center">Sample Text Generator</h1>
         <hr />
         <form className="form-inline">
-          <label>Paragraphs:</label>
-          <Paras value={this.state.paras} onChange={this.changeParas} />
-          <label>Include HTML:</label>
-          <HtmlSelect value={this.state.html} onChange={this.showHtml}/>
+          <div className="form-group">
+            <label>Paragraphs:</label>
+            <Paras value={this.state.paras} onChange={this.changeParas} />
+          </div>
+          <div className="form-group">
+            <label>Include HTML:</label>
+            <HtmlSelect value={this.state.html} onChange={this.showHtml}/>
+          </div>
         </form>
         <br />
         <Output text={this.state.text}/>

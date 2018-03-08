@@ -20,9 +20,9 @@ class Paras extends Component {
 
   render() {
     return (
-
-        <input className="form-control" type="text" value={this.state.value} onChange={this.onChange} />
-
+      <div>
+        <input className="form-control" type="number" value={this.state.value} onChange={this.onChange} />
+      </div>
     );
   }
 }
